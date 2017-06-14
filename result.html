@@ -1,0 +1,812 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Rent Sent Go</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <!-- main -->
+    <link rel="stylesheet/less" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet/less" href="css/owl.carousel.min.css">
+    <link rel="stylesheet/less" href="css/responsive.less">
+    <link rel="stylesheet/less" href="css/subscribe-modal.less">
+    <link rel="stylesheet/less" href="css/login.less">
+    <link rel="stylesheet/less" href="css/header.less">
+    <link rel="stylesheet/less" href="css/result.less">
+    <link rel="stylesheet" href="glyphs-fonts.css">
+    <link rel="stylesheet/less" href="css/sign-up.less">
+    <link rel="stylesheet/less" href="css/main.less">
+    <link rel="stylesheet/less" href="css/font-awesome.css">
+    <link rel="stylesheet/less" href="css/jquery-ui.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="js/less.js" type="text/javascript"></script>
+    <!--  jQuery 1.7+  -->
+    <script src="js/jquery-1.9.1.js"></script>
+</head>
+
+<body>
+    <!-- result nav -->
+    <header>
+        <div class="container-fluid">
+            <div class="header-inner-section">
+                <div class="row">
+                    <div class="col-lg-2 col-md-3 col-sm-12 com-border-right">
+                        <a class="navbar-brand logo" href="index.html"><img src="img/logo_nav.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-12 com-border-right">
+                        <div class="select-city">
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                    <p><span class="icon-location"></span> Pune
+                                        <p>
+                                </button>
+                                <div class="dropdown-content text-left">
+                                    <div class="location-input-container">
+                                        <input type="text" name="" value="" placeholder="Enter your locality">
+                                        <button>locate me <span class="icon-location"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-4 col-sm-12 com-border-right search-rentals-popup">
+                        <!--search form begins-->
+                        <div id="searchResultPopUp" class="overlay scrollbar" id="style-2">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="icon-close"></span></a>
+                            <div class="overlay-content">
+                                <div class="container">
+                                    <div class="header-form">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="dropdown">
+                                                    <button class="dropbtn">
+                                                        <p><span class="icon-location"></span> Pune
+                                                            <p>
+                                                    </button>
+                                                    <div class="dropdown-content text-left">
+                                                        <div class="location-input-container">
+                                                            <input type="text" name="" value="" placeholder="Enter your locality">
+                                                            <button>locate me <span class="icon-location"></span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 search-input">
+                                                <input type="text" name="" value="Avenger" placeholder="Avenger" class="form-control pull-left">
+                                            </div>
+                                            <div class="col-md-2">
+                                                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-offset-2 col-md-4 text-left">
+                                            <h3>Products</h3>
+                                            <ul>
+                                                <li><a href="#">Avenger 150 Street<span>(39)</span></a></li>
+                                                <li><a href="#">Avenger 220 Cruise<span>(12)</span></a></li>
+                                                <li><a href="#">Avenger 220 Street<span>(5)</span></a></li>
+                                                <li><a href="#">Modified Bajaj Avenger<span>(6)</span></a></li>
+                                                <li><a href="#">Avenger 150 Street<span>(19)</span></a></li>
+                                                <li><a href="#">The Avengers DVD<span>(1)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4 text-left">
+                                            <h3>Products</h3>
+                                            <ul>
+                                                <li><a href="#">Cruisers under Motorbikes</a></li>
+                                                <li><a href="#">Modified under Motorbikes</a></li>
+                                                <li><a href="#">DVD under Games</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-7 col-md-offset-2 text-left">
+                                            <div class="card-container">
+                                                <h3>Popular Products</h3>
+                                                <div id="featured-cards" class="owl-carousel owl-theme">
+                                                    <div class="product-card item">
+                                                        <div class="img-container">
+                                                            <img src="img/prod-img.jpg" alt="triumph">
+                                                        </div>
+                                                        <div class="product-descp">
+                                                            <h5>triumph bonneville</h5>
+                                                            <p>Rs <span>3500</span> per Day</p>
+                                                            <button>see 5 products</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-card item">
+                                                        <div class="img-container">
+                                                            <img src="img/prod-img.jpg" alt="triumph">
+                                                        </div>
+                                                        <div class="product-descp">
+                                                            <h5>triumph bonneville</h5>
+                                                            <p>Rs <span>3500</span> per Day</p>
+                                                            <button>see 5 products</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-card item">
+                                                        <div class="img-container">
+                                                            <img src="img/prod-img.jpg" alt="triumph">
+                                                        </div>
+                                                        <div class="product-descp">
+                                                            <h5>triumph bonneville</h5>
+                                                            <p>Rs <span>3500</span> per Day</p>
+                                                            <button>see 5 products</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-card item">
+                                                        <div class="img-container">
+                                                            <img src="img/prod-img.jpg" alt="triumph">
+                                                        </div>
+                                                        <div class="product-descp">
+                                                            <h5>triumph bonneville</h5>
+                                                            <p>Rs <span>3500</span> per Day</p>
+                                                            <button>see 5 products</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <form class="navbar-form navbar-nav" role="search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Avenger Motorbike">
+                                <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button" onclick="openNav()">Search Rentals</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-1 col-md-2 col-sm-12 topadd-to-cart">
+                        <div class="addtovart-login pull-right">
+                            <div class="addtovart-login-cooman">
+                                <div class="add-to-cart">
+                                    <span class="icon-cart"></span>
+                                    <sub>10</sub>
+                                </div>
+                            </div>
+                            <div class="addtovart-login-cooman">
+                                <div class="login-logout">
+                                    <div class="dropdown" id="menuLogin">
+                                        <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">
+                                            <div class="user-prof-img">
+                                                <img src="img/user-image.png">
+                                            </div>
+                                                <sub> <i class="fa fa-chevron-down" aria-hidden="true"></i> </sub>
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <form class="form" id="formLogin">
+                                                <p>Hi, User</p>
+                                                <a href="#">lease products</a>
+                                                <a href="#">past orders</a>
+                                                <a href="#">Edit profile</a>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- megha menu open-->
+        <div class="megha-menu">
+            <div class="container-fluid">
+                <nav class="navbar navbar-default" role="navigation" style="padding: 0px; margin: 0px;">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand active" href="#"><i class="fa fa-home"></i></a>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">motorcycle <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">link 1</a></li>
+                                        <li><a href="#">link 2</a></li>
+                                        <li><a href="#">link 3</a></li>
+                                        <li><a href="#">link 4</a></li>
+                                        <li><a href="#">link 5</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">bicycle<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">link 11</a></li>
+                                        <li><a href="#">link 12</a></li>
+                                        <li><a href="#">link 13</a></li>
+                                        <li><a href="#">link 14</a></li>
+                                        <li><a href="#">link 15</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">cameras<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">link 21</a></li>
+                                        <li><a href="#">link 22</a></li>
+                                        <li><a href="#">link 23</a></li>
+                                        <li><a href="#">link 24</a></li>
+                                        <li><a href="#">link 25</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">musics<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">link 31</a></li>
+                                        <li><a href="#">link 32</a></li>
+                                        <li><a href="#">link 33</a></li>
+                                        <li><a href="#">link 34</a></li>
+                                        <li><a href="#">link 35</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">electronics<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">link 41</a></li>
+                                        <li><a href="#">link 42</a></li>
+                                        <li><a href="#">link 43</a></li>
+                                        <li><a href="#">link 44</a></li>
+                                        <li><a href="#">link 45</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">camping<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">link 51</a></li>
+                                        <li><a href="#">link 52</a></li>
+                                        <li><a href="#">link 53</a></li>
+                                        <li><a href="#">link 54</a></li>
+                                        <li><a href="#">link 55</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle active" data-toggle="dropdown">games<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">link 61</a></li>
+                                        <li><a href="#">link 62</a></li>
+                                        <li><a href="#">link 63</a></li>
+                                        <li><a href="#">link 64</a></li>
+                                        <li><a href="#">link 65</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-heart" aria-hidden="true"></i> experiences</a>
+                                    <ul class="dropdown-menu" role="menu" style="display: none;">
+                                        <li><a href="#">link 71</a></li>
+                                        <li><a href="#">link 72</a></li>
+                                        <li><a href="#">link 73</a></li>
+                                        <li><a href="#">link 74</a></li>
+                                        <li><a href="#">link 75</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- megha menu closed-->
+    </header>
+    <div class="result-nav" id="result-nav">
+        <!-- <header>
+            <div class="container-fluid">
+                <div class="myToggle">
+                    <nav id="myNavbar" class="navbar" role="navigation">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand logo" href=""><img src="img/logo_nav.png" alt=""></a>
+                            </div>
+                            <form class="navbar-form navbar-nav" role="search">
+                                <div class="select-city">
+                                    <img src="img/PixelKit_point_marker_icon.png" alt="">
+                                    <select class="form-control" id="city">
+                                        <option>Pune</option>
+                                        <option>Banglore</option>
+                                        <option>Chennai</option>
+                                        <option>Goa</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="I'm looking for...">
+                                </div>
+                                <button><span>Search Rentals</span></button>
+                            </form>
+                            <div class="collapse navbar-collapse navbar-right" id="navbarCollapse">
+                                <ul class="nav navbar-nav">
+                                    <li class="active nav-item"><a href="trending.php" id=trending class="nav-link">Trending<span class="sr-only">(current)</span></a></li>
+                                    <li class="nav-item"><a class="nav-link" id="categories" href="categories.php">Categories</a></li>
+                                    <li class="nav-item"><a href="explore.php" id="explore" class="nav-link">Explore</a></li>
+                                    <li class="dropdown">
+                                        <a href="" class="dropdown-toggle user-log-profile" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            <div class="user-img-container">
+                                                <img src="img/icon-user-default.png" alt="">
+                                            </div><i class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Block A</a></li>
+                                            <li><a href="#">Block B</a></li>
+                                            <li><a href="#">Block C</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                    </nav>
+                    </div>
+                </div>
+        </header> -->
+        <!-- showing product  -->
+        <div class="container">
+            <div class="showing-result-for-product-sorting">
+                <div class="showing-result-for-product">
+                    <p>Showing <span>1980</span> Result for</p>
+                    <h3>"Avenger Motorbike"</h3>
+                </div>
+                <div class="sort-by">
+                    <span>Sort by:</span>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <p>popularity
+                                <p>
+                        </button>
+                        <div class="dropdown-content text-left">
+                            <a href="#">Price: low to high</a>
+                            <a href="#">Price: high to low</a>
+                            <a href="#">Customer Reviews</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- filtered products -->
+        <div class="products-with-sidebar-filter">
+            <div class="sidebar-filter">
+                <form>
+                    <div class="brand">
+                        <div class="filter-title">
+                            <h4>Brand</h4>
+                            <button type="reset">Clear filter</button>
+                        </div>
+                        <div class="search-brand-input">
+                            <input type="text" name="search-brand" placeholder="Search Brand">
+                        </div>
+                        <div class="select-brands-multiple">
+                            <label>
+                                <span class=checkbox><input type="checkbox"><span class=check></span></span>
+                                <p>Bajaj</p>
+                            </label>
+                            <label>
+                                <span class=checkbox><input type="checkbox"><span class=check></span></span>
+                                <p>Royal Enfield</p>
+                            </label>
+                            <label>
+                                <span class=checkbox><input type="checkbox"><span class=check></span></span>
+                                <p>Yamaha</p>
+                            </label>
+                            <label>
+                                <span class=checkbox><input type="checkbox"><span class=check></span></span>
+                                <p>Honda</p>
+                            </label>
+                            <label>
+                                <span class=checkbox><input type="checkbox"><span class=check></span></span>
+                                <p>Hero Corp</p>
+                            </label>
+                            <label>
+                                <span class=checkbox><input type="checkbox"><span class=check></span></span>
+                                <p>Renault</p>
+                            </label>
+                            <label>
+                                <span class=checkbox><input type="checkbox"><span class=check></span></span>
+                                <p>Bajaj</p>
+                            </label>
+                            <label>
+                                <span class=checkbox><input type="checkbox"><span class=check></span></span>
+                                <p>Royal Enfield</p>
+                            </label>
+                            <label>
+                                <span class=checkbox><input type="checkbox"><span class=check></span></span>
+                                <p>Yamaha</p>
+                            </label>
+                            <label>
+                                <span class=checkbox><input type="checkbox"><span class=check></span></span>
+                                <p>Honda</p>
+                            </label>
+                            <label>
+                                <span class=checkbox><input type="checkbox"><span class=check></span></span>
+                                <p>Hero Corp</p>
+                            </label>
+                            <label>
+                                <span class=checkbox><input type="checkbox"><span class=check></span></span>
+                                <p>Renault</p>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- price -->
+                    <div class="price-range">
+                        <div class="filter-title">
+                            <h4>Price</h4>
+                            <button type="reset">Clear filter</button>
+                        </div>
+                        <div class="select-price">
+                            <div id="slider"></div>
+                        </div>
+                    </div>
+                    <div class="locality-filter">
+                        <div class="filter-title">
+                            <h4>Locality</h4>
+                            <button type="reset">Clear filter</button>
+                        </div>
+                        <div class="locality-city-distance">
+                            <div class="input-locality-range">
+                                <label for="5-kms">
+                                    <input type="radio" name="foo" value="5-kms" id="5-kms"> <span>Upto 5 Kms</span>
+                                </label>
+                            </div>
+                            <label for="10-kms">
+                                <input type="radio" name="foo" value="10-kms" id="10-kms"> <span>Upto 15 Kms</span>
+                            </label>
+                            <label for="15-kms">
+                                <input type="radio" name="foo" value="15-kms" id="15-kms"> <span>Upto 20 Kms</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="discount-filter">
+                        <div class="filter-title">
+                            <h4>Discount</h4>
+                            <button type="reset">Clear filter</button>
+                        </div>
+                        <div class="discount-percentage">
+                            <div class="discount-percentage-range">
+                                <label for="below-25%">
+                                    <input type="radio" name="foo" value="below-25%" id="below-25%"> <span>below-25%</span>
+                                </label>
+                            </div>
+                            <label for="between-25%-50%">
+                                <input type="radio" name="foo" value="between-25%-50%" id="between-25%-50%"> <span>between 25%-50%</span>
+                            </label>
+                            <label for="50%-more">
+                                <input type="radio" name="foo" value="50%-more" id="50%-more"> <span>50% & more</span>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- <div class="clear"></div> -->
+            <div class="filtered-products">
+                <!-- product -->
+                <div class="filtered-products-card col-md-4">
+                    <div class="img-container">
+                        <img src="img/prod-img.jpg" alt="triumph">
+                    </div>
+                    <a href="#" class="rent-now">rent now</a>
+                    <div class="filtered-products-descp">
+                        <div class="product-title-rate">
+                            <h4>triumph bonneville</h4>
+                            <h5>Rs<span>5500</span> per day</h5>
+                        </div>
+                        <div class="likes">
+                            <span class="numbers">30</span><i class="fa fa-heart" aria-hidden="true"></i>
+                        </div>
+                        <div class="product-location">
+                            <p>Shivajinagar (15Kms)</p><span class="icon-delivery-premium"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- product -->
+                <div class="filtered-products-card col-md-4">
+                    <div class="img-container">
+                        <img src="img/prod-img.jpg" alt="triumph">
+                    </div>
+                    <a href="#" class="rent-now">rent now</a>
+                    <div class="filtered-products-descp">
+                        <div class="product-title-rate">
+                            <h4>triumph bonneville</h4>
+                            <h5>Rs<span>5500</span> per day</h5>
+                        </div>
+                        <div class="likes">
+                            <span class="numbers">30</span><i class="fa fa-heart" aria-hidden="true"></i>
+                        </div>
+                        <div class="product-location">
+                            <p>Shivajinagar (15Kms)</p><span class="icon-delivery-premium"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- product -->
+                <div class="filtered-products-card col-md-4">
+                    <div class="img-container">
+                        <img src="img/prod-img.jpg" alt="triumph">
+                    </div>
+                    <a href="#" class="rent-now">rent now</a>
+                    <div class="filtered-products-descp">
+                        <div class="product-title-rate">
+                            <h4>triumph bonneville</h4>
+                            <h5>Rs<span>5500</span> per day</h5>
+                        </div>
+                        <div class="likes">
+                            <span class="numbers">30</span><i class="fa fa-heart" aria-hidden="true"></i>
+                        </div>
+                        <div class="product-location">
+                            <p>Shivajinagar (15Kms)</p><span class="icon-delivery-premium"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- product -->
+                <div class="filtered-products-card col-md-4">
+                    <div class="img-container">
+                        <img src="img/prod-img.jpg" alt="triumph">
+                    </div>
+                    <a href="#" class="rent-now">rent now</a>
+                    <div class="filtered-products-descp">
+                        <div class="product-title-rate">
+                            <h4>triumph bonneville</h4>
+                            <h5>Rs<span>5500</span> per day</h5>
+                        </div>
+                        <div class="likes">
+                            <span class="numbers">30</span><i class="fa fa-heart" aria-hidden="true"></i>
+                        </div>
+                        <div class="product-location">
+                            <p>Shivajinagar (15Kms)</p><span class="icon-delivery-premium"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- product -->
+                <div class="filtered-products-card col-md-4">
+                    <div class="img-container">
+                        <img src="img/prod-img.jpg" alt="triumph">
+                    </div>
+                    <a href="#" class="rent-now">rent now</a>
+                    <div class="filtered-products-descp">
+                        <div class="product-title-rate">
+                            <h4>triumph bonneville</h4>
+                            <h5>Rs<span>5500</span> per day</h5>
+                        </div>
+                        <div class="likes">
+                            <span class="numbers">30</span><i class="fa fa-heart" aria-hidden="true"></i>
+                        </div>
+                        <div class="product-location">
+                            <p>Shivajinagar (15Kms)</p><span class="icon-delivery-premium"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- featured product -->
+                <div class="featured-rpoduct-advt col-md-8">
+                    <img src="img/feature-prod.png" alt="" width="100%">
+                </div>
+                <!-- product -->
+                <div class="filtered-products-card col-md-4">
+                    <div class="img-container">
+                        <img src="img/prod-img.jpg" alt="triumph">
+                    </div>
+                    <a href="#" class="rent-now">rent now</a>
+                    <div class="filtered-products-descp">
+                        <div class="product-title-rate">
+                            <h4>triumph bonneville</h4>
+                            <h5>Rs<span>5500</span> per day</h5>
+                        </div>
+                        <div class="likes">
+                            <span class="numbers">30</span><i class="fa fa-heart" aria-hidden="true"></i>
+                        </div>
+                        <div class="product-location">
+                            <p>Shivajinagar (15Kms)</p><span class="icon-delivery-premium"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <a data-target="#" class="load-more-products">load more 30 results</a>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="bottom-subscribe-form">
+        <div class="container-fluid">
+            <div class="subscribe-form">
+                <div class="location-container">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    <select name="city">
+                        <option value="Pune">Pune</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Banglore">Banglore</option>
+                        <option value="Goa">Goa</option>
+                    </select>
+                </div>
+                <input type="email" name="" placeholder="Enter Email & subscribe to the latest deals">
+                <button id="subscribe-to-deals">subscribe to deals</button>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <footer>
+        <div class="container-fluid">
+            <div class="sitemap row">
+                <div class="col-lg-4 col-md-4 logo">
+                    <a href="#"><img src="img/logo-footer.png" alt=""></a>
+                    <p>© 2016-17 RentSetGo Pvt. Ltd.
+                        <br>All Rights Reserved</p>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                    <h4>Get to know us</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Media</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Partners</a>
+                    <a href="#">Download App</a>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                    <h4>connect with us</h4>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Youtube</a>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                    <h4>let us help you</h4>
+                    <a href="#">Refer 7 Earn</a>
+                    <a href="#">FAQ</a>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                    <h4>got queries</h4>
+                    <a href="#">Call Us: +91 7738257343</a>
+                    <a href="#">Mail: orders@rentsetgo.co</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/owl.carousel.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script>
+    $("#sign-me-up").click(function() {
+        $("#modal1").modal('hide');
+        $("#modal2").modal('show');
+    });
+    $("#login-me-now").click(function() {
+        $("#modal2").modal('hide');
+        $("#modal1").modal('show');
+    });
+    $(document).scroll(function() {
+        var y = $(this).scrollTop();
+        if (y > 800) {
+            $('.bottomMenu').fadeIn();
+        } else {
+            $('.bottomMenu').fadeOut();
+        }
+    });
+    </script>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+    <script>
+    function collision($div1, $div2) {
+        var x1 = $div1.offset().left;
+        var w1 = 40;
+        var r1 = x1 + w1;
+        var x2 = $div2.offset().left;
+        var w2 = 40;
+        var r2 = x2 + w2;
+
+        if (r1 < x2 || x1 > r2) return false;
+        return true;
+
+    }
+
+    // // slider call
+
+    $('#slider').slider({
+        range: true,
+        min: 0,
+        max: 500,
+        values: [75, 300],
+        slide: function(event, ui) {
+
+            $('.ui-slider-handle:eq(0) .price-range-min').html('$' + ui.values[0]);
+            $('.ui-slider-handle:eq(1) .price-range-max').html('$' + ui.values[1]);
+            $('.price-range-both').html('<i>$' + ui.values[0] + ' - </i>$' + ui.values[1]);
+
+            //
+
+            if (ui.values[0] == ui.values[1]) {
+                $('.price-range-both i').css('display', 'none');
+            } else {
+                $('.price-range-both i').css('display', 'inline');
+            }
+
+            //
+
+            if (collision($('.price-range-min'), $('.price-range-max')) == true) {
+                $('.price-range-min, .price-range-max').css('opacity', '0');
+                $('.price-range-both').css('display', 'block');
+            } else {
+                $('.price-range-min, .price-range-max').css('opacity', '1');
+                $('.price-range-both').css('display', 'none');
+            }
+
+        }
+    });
+
+    $('.ui-slider-range').append('<span class="price-range-both value"><i>$' + $('#slider').slider('values', 0) + ' - </i>' + $('#slider').slider('values', 1) + '</span>');
+
+    $('.ui-slider-handle:eq(0)').append('<span class="price-range-min value">$' + $('#slider').slider('values', 0) + '</span>');
+
+    $('.ui-slider-handle:eq(1)').append('<span class="price-range-max value">$' + $('#slider').slider('values', 1) + '</span>');
+    </script>
+    <script>
+    function openNav() {
+        document.getElementById("searchResultPopUp").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("searchResultPopUp").style.width = "0%";
+    }
+    </script>
+    <script>
+    var owl = $('#featured-cards');
+    owl.owlCarousel({
+        margin: 10,
+        loop: true,
+        dots: false,
+        nav: true,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 2
+            },
+            1200: {
+                items: 2
+            }
+        }
+    })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+#login {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.3);
+    .login-left {
+        background-image: url('../img/signin-bg.jpg');
+        text-align: center;
+        padding: 100px 20px 20px;
+        background-position: 75% 140%;
+        background-size: 180%;
+        width: 45%;
+        float: left;
+        height: 380px;
+        h2 {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+        a {
+            color: #fff;
+        }
+        a#sign-me-up {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+            border: 1px solid #fff;
+            border-radius: 3px;
+            padding: 8px 40px;
+            margin-top: 30px;
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .login-social {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 80px;
+            a {
+                display: block;
+                color: #fff;
+                padding: 15px 0;
+                margin-bottom: 15px;
+                font-size: 13px;
+                text-transform: uppercase;
+                font-weight: 600;
+                letter-spacing: 0.5px;
+                text-decoration: none;
+                i {
+                    margin-left: 20px;
+                    font-size: 20px;
+                    line-height: 16px;
+                    float: left;
+                    @media only screen and (max-width: 1366px) {
+                        font-size: 16px;
+                        line-height: 13px;
+                    }
+                }
+                @media only screen and (max-width: 1366px) {
+                    font-size: 11px;
+                }
+            }
+            a.login-facebook {
+                background: #3b5998;
+            }
+            a.login-google {
+                background: #e34e46;
+            }
+        }
+    }
+    .login-form {
+        padding: 30px 20px;
+        background: #f9f9f9;
+        width: 55%;
+        float: left;
+        height: 380px;
+        h3 {
+            font-size: 18px;
+            color: #000;
+            font-weight: 500;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+        }
+        form {
+            input {
+                float: left;
+                width: 100%;
+                border: 0;
+                border-bottom: 1px solid #ececec;
+                margin: 30px 0 0 0;
+                background: transparent;
+                font-size: 12px;
+                letter-spacing: 1px;
+                font-weight: 600;
+                color: #000;
+                &:focus {
+                    outline: none;
+                }
+                &:-webkit-autofill {
+                    -webkit-box-shadow: 0 0 0px 1000px #f9f9f9 inset;
+                }
+            }
+            span {
+                font-size: 12px;
+                display: inline-block;
+                margin-top: 30px;
+                margin-bottom: -20px;
+                float: left;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+            .remember-me {
+                float: left;
+                width: 100%;
+                margin-top: 30px;
+                label {
+                    span {
+                        line-height: 19px;
+                        font-weight: 600;
+                        letter-spacing: 1px;
+                        margin-top: 0;
+                    }
+                    input[type="checkbox"] {
+                        height: 17px;
+                        width: 18px;
+                        vertical-align: middle;
+                        margin: 0 0.4em 0.4em 0;
+                        border: 1px solid rgba(0, 0, 0, 0.3);
+                        background: -webkit-linear-gradient(#FCFCFC, #DADADA);
+                        -webkit-appearance: none;
+                        -webkit-transition: box-shadow 200ms;
+                        box-shadow: inset 1px 1px 0 #fff, 0 1px 1px rgba(0, 0, 0, 0.1);
+                        -webkit-border-radius: 2px;
+                        border-radius: 0;
+                        padding: 2px 7px 7px 7px;
+                    }
+                    input[type="checkbox"]:checked {
+                        outline: none;
+                        border-color: #e8352c;
+                    }
+                    input[type="checkbox"]:checked + span {
+                        color: #e8352c;
+                    }
+                    input[type="checkbox"]:checked:before {
+                        color: red;
+                        content: '\2713';
+                        -webkit-margin-start: 0;
+                        margin-left: -5px;
+                        font-size: 0.9em;
+                        background: #e8352c;
+                        padding: 2px;
+                        height: 11px;
+                        display: inline-block;
+                        -webkit-text-fill-color: rgba(0, 128, 0, 0);
+                        margin-top: 0;
+                        width: 12px;
+                    }
+                }
+                span {
+                    float: right;
+                    text-align: right;
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                    text-transform: capitalize;
+                    margin-top: 0;
+                    a {
+                        color: #58647b;
+                        font-weight: 500;
+                        text-decoration: none;
+                        line-height: 20px;
+                    }
+                }
+            }
+            button {
+                background-color: #e8352c;
+                color: #fff;
+                border: 0;
+                font-size: 12px;
+                padding: 10px 0;
+                margin-top: 6px;
+                margin-right: 10px;
+                border-radius: 4px;
+                box-shadow: 0px 2px 6px rgba(232, 53, 44, 0.69);
+                border-bottom: 2px solid #c1231b;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: 700;
+                display: block;
+                width: 160px;
+                margin: 0 auto;
+                margin-top: 70px;
+            }
+        }
+    }
+}

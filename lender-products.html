@@ -1,0 +1,756 @@
+<!doctype html>
+<!--[if lt IE 7]>      
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="">
+    <![endif]-->
+    <!--[if IE 7]>         
+    <html class="no-js lt-ie9 lt-ie8" lang="">
+        <![endif]-->
+        <!--[if IE 8]>         
+        <html class="no-js lt-ie9" lang="">
+            <![endif]-->
+            <!--[if gt IE 8]><!-->
+            <html class="no-js" lang="">
+                <!--<![endif]-->
+                <head>
+                    <meta charset="utf-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+                    <title>Rent Sent Go</title>
+                    <meta name="description" content="">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+                    <!-- fonts -->
+                    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+                    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+                    <link rel="stylesheet" href="css/bootstrap.min.css">
+                    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+                    <link rel="stylesheet" href="css/reset.min.css">
+                    <!-- main -->
+                    <link rel="stylesheet/less" href="css/owl.theme.default.min.css">
+                    <link rel="stylesheet/less" href="css/owl.carousel.min.css">
+                    <link rel="stylesheet/less" href="css/responsive.less">
+                    <link rel="stylesheet/less" href="css/subscribe-modal.less">
+                    <link rel="stylesheet/less" href="css/login.less">
+                    <link rel="stylesheet/less" href="css/header.less">
+                    <link rel="stylesheet/less" href="css/cart-list.less">
+                    <link rel="stylesheet/less" href="css/lender-products.less">
+                    <link rel="stylesheet/less" href="css/sign-up.less">
+                    <link rel="stylesheet" href="glyphs-fonts.css">
+                    <link rel="stylesheet/less" href="css/main.less">
+                    <link rel="stylesheet/less" href="css/font-awesome.css">
+                    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+                    <script src="js/less.js" type="text/javascript"></script>
+                    <!--  jQuery 1.7+  -->
+                    <script src="js/jquery-1.9.1.js"></script>
+                </head>
+                <body>
+                    <div id="modal1" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <div class="">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="login" id="login">
+                                        <div class="row">
+                                            <div class="login-left">
+                                                <h2>Not Registered Yet ?</h2>
+                                                <a target="#" id="sign-me-up">sign me up !</a>
+                                                <div class="login-social">
+                                                    <a href="#" class="login-facebook"><i class="fa fa-facebook" aria-hidden="true"></i> login with facebook</a>
+                                                    <a target="#" class="login-google"><i class="fa fa-google-plus" aria-hidden="true"></i> login with google</a>
+                                                </div>
+                                            </div>
+                                            <div class="login-form">
+                                                <h3>Sign in</h3>
+                                                <form action="login_submit" method="get" accept-charset="utf-8">
+                                                    <span>Email</span>
+                                                    <input type="text" placeholder="Your Email">
+                                                    <span>Password</span>
+                                                    <input type="password" placeholder="Enter your password here">
+                                                    <div class="remember-me">
+                                                        <label for="remember-me">
+                                                        <input type="checkbox" name="remember-me" value="remember-me" id="remember-me">
+                                                        <span>Remember Me</span>
+                                                        </label>
+                                                        <span><a href="#">forgot passowrd?</a></span>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                    <button type="submit">log in now !</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-login-bottom-text">
+                                        <h2>Get coupons for discount & offers</h2>
+                                        <h4>by joining our rentsetgo family</h4>
+                                    </div>
+                                    <!-- <button id="close1_open2" type="button" class="btn btn-primary">close & open modal 2</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <button class="btn btn-primary" data-toggle="modal" data-target="#modal2">modal 2</button> -->
+                    <div id="modal2" class="modal fade sign-up-no-modal-padding" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <div class="">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="sign-up-box" id="sign-up-box">
+                                        <div class="row">
+                                            <div class="login-left">
+                                                <h2>Have an account<br>already ?</h2>
+                                                <a target="#" id="login-me-now">Login</a>
+                                                <div class="login-social">
+                                                    <a href="#" class="login-facebook"><i class="fa fa-facebook" aria-hidden="true"></i> login with facebook</a>
+                                                    <a href="#" class="login-google"><i class="fa fa-google-plus" aria-hidden="true"></i> login with google</a>
+                                                </div>
+                                            </div>
+                                            <div class="login-form">
+                                                <h3>Sign Up</h3>
+                                                <form action="login_submit" method="get" accept-charset="utf-8">
+                                                    <span>Fill Name</span>
+                                                    <input type="text" placeholder="Full Name">
+                                                    <span>Email</span>
+                                                    <input type="text" placeholder="Email">
+                                                    <span>Phone</span>
+                                                    <input type="tel" placeholder="Please Enter Your mobile number">
+                                                    <span>Password</span>
+                                                    <input type="password" placeholder="Minimun 6 Alphanumeric Characters">
+                                                    <div class="clear"></div>
+                                                    <button type="submit">Sign Up now !</button>
+                                                    <p>By clicking on "Singn Me Up", I agree to RentSetGo's Terms & Conditions</p>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <button id="close2_open1" type="button" class="btn btn-primary">close & open modal 2</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="select-coupon" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <div class="">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="login" id="login">
+                                        <div class="row">
+                                            <div class="login-left">
+                                                <h2>Looking for coupons?</h2>
+                                                <div class="login-social">
+                                                    <a href="#" class="login-facebook"><i class="fa fa-facebook" aria-hidden="true"></i> login with facebook</a>
+                                                    <a target="#" class="login-google"><i class="fa fa-google-plus" aria-hidden="true"></i> login with google</a>
+                                                </div>
+                                            </div>
+                                            <div class="login-form">
+                                                <h3>Select any one coupon</h3>
+                                                <form action="login_submit" method="get" accept-charset="utf-8">
+                                                <form action="/action_page.php">
+                                                    <div class="paper-bg">
+                                                        <input type="radio" name="coupon" id="rs500" value="rs500">
+                                                        <label for="rs500">rsg500<span>get upto Rs500 Off</span></label>
+                                                        <div class="check"></div>
+                                                    </div>
+                                                    <div class="paper-bg">
+                                                        <input type="radio" name="coupon" id="rs1000" value="rs1000">
+                                                        <label for="rs1000">rsg1000<span>get upto Rs500 Off</span></label>
+                                                        <div class="check"></div>
+                                                    </div>
+                                                    <div class="paper-bg">
+                                                        <input type="radio" name="coupon" id="rs1500" value="rs1500">
+                                                        <label for="rs1500">rsg1500<span>get upto Rs500 Off</span></label>
+                                                        <div class="check"></div>
+                                                    </div>
+                                                    <div class="paper-bg">
+                                                        <input type="radio" name="coupon" id="rs2000" value="rs2000">
+                                                        <label for="rs2000">rsg2000<span>get upto Rs500 Off</span></label>
+                                                        <div class="check"></div>
+                                                    </div>
+                                                    <a class="apply-coupon" data-target="#">Apply Coupon</a>
+                                                </form>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <button id="close1_open2" type="button" class="btn btn-primary">close & open modal 2</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="header-inner-section">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-3 col-sm-12 com-border-right">
+                                    <a class="navbar-brand logo" href="index.html"><img src="img/logo_nav.png" alt=""></a>
+                                </div>
+                                <div class="col-lg-10 col-md-2 col-sm-12 topadd-to-cart">
+                                    <div class="addtovart-login pull-right">
+                                        <div class="addtovart-login-cooman">
+                                            <div class="add-to-cart">
+                                                <span class="icon-cart"></span>
+                                                <sub>10</sub>
+                                            </div>
+                                        </div>
+                                        <div class="addtovart-login-cooman">
+                                            <div class="login-logout">
+                                                <div class="dropdown" id="menuLogin">
+                                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">
+                                                        <div class="user-prof-img">
+                                                            <img src="img/user-image.png">
+                                                        </div>
+                                                        <sub> <i class="fa fa-chevron-down" aria-hidden="true"></i> </sub>
+                                                    </a>
+                                                    <div class="dropdown-menu">
+                                                        <form class="form" id="formLogin">
+                                                            <p>Hi, User</p>
+                                                            <a href="#">lease products</a>
+                                                            <a href="#">past orders</a>
+                                                            <a href="#">Edit profile</a>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-panel">
+                        <div class="cart-nav">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#home">My Products</a></li>
+                                <!-- <li><a data-toggle="tab" href="#menu1">my wishlist <span class="number-of-items">(3)</span></a></li> -->
+                                <li><a data-toggle="tab" href="#menu2">Requests</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-content">
+                            <div id="home" class="tab-pane fade in active">
+                                <!-- <div class="corner-container">
+                                    <div class="summery-info-billing">
+                                      <div class="cart-summery-corner active"><a href="cart-list.html">cart summary</a></div>
+                                      <div class="user-info-corner"><a href="cart-user-info.html">user info</a></div>
+                                      <div class="billing-details-corner"><a href="billing-details.html">billing details</a></div>
+                                    </div>
+                                    </div> -->
+                                <div class="shopping-card-item-order-caontainer">
+                                    <div class="shopping-card-item-price-caontainer">
+                                        <div class="products-listed">
+                                            <h2>You have 2 Products listed</h2>
+                                            <button>Add new listing</button>
+                                        </div>
+                                        <div id="cart-card">
+                                            <div class="row">
+                                                <div class="img-container col-md-3">
+                                                    <img src="img/rent-an-avenger.jpg" alt="">
+                                                </div>
+                                                <div class="cart-item-details col-md-5">
+                                                    <h2 class="product-listed">Bajaj Avenger 220 Cruiser <span>( x1 )</span></h2>
+                                                    <h3 class="product-approved">Product Approved</h3>
+                                                </div>
+                                                <div class="cart-item-plan col-md-2">
+                                                    <h3>Edit plan</h3>
+                                                    <h4 class="product-listed-deposit">Deposit</h4>
+                                                    <span>Rs. 3000</span>
+                                                </div>
+                                                <div class="save-for-later col-md-2">
+                                                    <h3>remove listing</h3>
+                                                    <h4 class="product-listed-lease">lease</h4>
+                                                    <span>
+                                                    Rs. 1500
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <!-- <span class="icon-close" aria-hidden="true"></span> -->
+                                        </div>
+                                        <div id="cart-card">
+                                            <div class="row">
+                                                <div class="img-container col-md-3">
+                                                    <img src="img/rent-an-avenger.jpg" alt="">
+                                                </div>
+                                                <div class="cart-item-details col-md-5">
+                                                    <h2 class="product-listed">Bajaj Avenger 220 Cruiser <span>( x1 )</span></h2>
+                                                    <h3 class="product-moderation">In Moderation</h3>
+                                                </div>
+                                                <div class="cart-item-plan col-md-2">
+                                                    <h3>Edit plan</h3>
+                                                    <h4 class="product-listed-deposit">Deposit</h4>
+                                                    <span>Rs. 3000</span>
+                                                </div>
+                                                <div class="save-for-later col-md-2">
+                                                    <h3>remove listing</h3>
+                                                    <h4 class="product-listed-lease">lease</h4>
+                                                    <span>
+                                                    Rs. 1500
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <!-- <span class="icon-close" aria-hidden="true"></span> -->
+                                        </div>
+                                        <!-- <div class="add-more-and-total">
+                                            <div class="row">
+                                              <div class="col-md-3 col-md-offset-3">
+                                                <button>add more products</button>
+                                              </div>
+                                              <div class="total-price col-md-5 col-md-offset-1">
+                                                <div class="col-md-4">
+                                                  <h2>Total</h2>
+                                                </div>
+                                                <div class="col-md-4">
+                                                  <h3>Rs. 10,000</h3>
+                                                </div>
+                                                <div class="col-md-4 text-right">
+                                                  <h3>Rs. 7,500</h3>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            </div> -->
+                                    </div>
+                                    <div class="order-summary" id="lender-products-sidebar">
+                                        <h2>Love Lending ?<br>Try Renting Now</h2>
+                                        <button>Back to products</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div id="menu1" class="tab-pane fade">
+                                <div id="my-wishlist">
+                                   <div class="shopping-card-item-order-caontainer">
+                                     <div class="shopping-card-item-price-caontainer">
+                                       <div id="cart-card">
+                                         <div class="row">
+                                           <div class="img-container col-md-3">
+                                             <img src="img/rent-an-avenger.jpg" alt="">
+                                           </div>
+                                           <div class="cart-item-details col-md-5">
+                                             <h2>Bajaj Avenger 220 Cruiser <span>( x1 )</span></h2>
+                                             <h3>Wanowrie, 5KMs from you</h3>
+                                           </div>
+                                           <div class="cart-item-plan col-md-2">
+                                             <h4>Deposit</h4>
+                                             <span>Rs. 3000</span>
+                                           </div>
+                                           <div class="save-for-later col-md-2">
+                                             <h4>lease</h4>
+                                             <span>
+                                             Rs. 1500</span>
+                                           </div>
+                                         </div>
+                                         <a href="#" class="card-accept-products">Accept</a>
+                                         <a href="#" class="card-reject-products">Reject</a>
+                                         <span class="icon-close" aria-hidden="true"></span>
+                                       </div>
+                                       <div id="cart-card">
+                                         <div class="row">
+                                           <div class="img-container col-md-3">
+                                             <img src="img/rent-an-avenger.jpg" alt="">
+                                           </div>
+                                           <div class="cart-item-details col-md-5">
+                                             <h2>Bajaj Avenger 220 Cruiser <span>( x1 )</span></h2>
+                                             <h3>Wanowrie, 5KMs from you</h3>
+                                           </div>
+                                           <div class="cart-item-plan col-md-2">
+                                             <h4>Deposit</h4>
+                                             <span>Rs. 3000</span>
+                                           </div>
+                                           <div class="save-for-later col-md-2">
+                                             <h4>lease</h4>
+                                             <span>
+                                             Rs. 1500</span>
+                                           </div>
+                                         </div>
+                                         <a href="#" class="card-accept-products">Accept</a>
+                                         <a href="#" class="card-reject-products">Reject</a>
+                                         <span class="icon-close" aria-hidden="true"></span>
+                                       </div>
+                                     </div>
+                                     <div class="something-better" id="something-better">
+                                       <h2>Looking for<br>something better? </h2>
+                                       <button>Back to products</button>
+                                     </div>
+                                   </div>
+                                   <div class="clear"></div>
+                                   <div class="featured-cards">
+                                     <div class="featured-cards-holder">
+                                       <div class="container-fluid">
+                                         <h3>Recommended for you</h3>
+                                         <div class="card-container">
+                                           <div id="featured-cards" class="owl-carousel owl-theme">
+                                             <div class="product-card item">
+                                               <div class="img-container">
+                                                 <img src="img/prod-img.jpg" alt="triumph">
+                                               </div>
+                                               <div class="product-descp">
+                                                 <h5>triumph bonneville</h5>
+                                                 <div class="likes">
+                                                   <span class="numbers">30</span><img src="img/likes.ico" alt="">
+                                                 </div>
+                                                 <p>Rs <span>3500</span> per Day</p>
+                                                 <button>see 5 products</button>
+                                               </div>
+                                             </div>
+                                             <div class="product-card item">
+                                               <div class="img-container">
+                                                 <img src="img/prod-img.jpg" alt="triumph">
+                                               </div>
+                                               <div class="product-descp">
+                                                 <h5>triumph bonneville</h5>
+                                                 <div class="likes">
+                                                   <span class="numbers">30</span><img src="img/likes.ico" alt="">
+                                                 </div>
+                                                 <p>Rs <span>3500</span> per Day</p>
+                                                 <button>see 5 products</button>
+                                               </div>
+                                             </div>
+                                             <div class="product-card item">
+                                               <div class="img-container">
+                                                 <img src="img/prod-img.jpg" alt="triumph">
+                                               </div>
+                                               <div class="product-descp">
+                                                 <h5>triumph bonneville</h5>
+                                                 <div class="likes">
+                                                   <span class="numbers">30</span><img src="img/likes.ico" alt="">
+                                                 </div>
+                                                 <p>Rs <span>3500</span> per Day</p>
+                                                 <button>see 5 products</button>
+                                               </div>
+                                             </div>
+                                             <div class="product-card item">
+                                               <div class="img-container">
+                                                 <img src="img/prod-img.jpg" alt="triumph">
+                                               </div>
+                                               <div class="product-descp">
+                                                 <h5>triumph bonneville</h5>
+                                                 <div class="likes">
+                                                   <span class="numbers">30</span><img src="img/likes.ico" alt="">
+                                                 </div>
+                                                 <p>Rs <span>3500</span> per Day</p>
+                                                 <button>see 5 products</button>
+                                               </div>
+                                             </div>
+                                           </div>
+                                         </div>
+                                       </div>
+                                     </div>
+                                   </div>
+                                </div>
+                                </div> -->
+                            <div id="menu2" class="tab-pane fade past-orders">
+                                <div id="accordion">
+                                    <h2 class="past-order-accordion">Booking ID # 982544BV<span>22nd Jan 2017</span></h2>
+                                    <div class="content">
+                                        <div class="shopping-card-item-order-caontainer">
+                                            <div class="shopping-card-item-price-caontainer">
+                                                <div id="cart-card">
+                                                    <div class="row">
+                                                        <div class="img-container col-md-3">
+                                                            <img src="img/rent-an-avenger.jpg" alt="">
+                                                        </div>
+                                                        <div class="cart-item-details col-md-5">
+                                                            <h2>Bajaj Avenger 220 Cruiser <span>( x1 )</span></h2>
+                                                            <h3>Wanowrie, 5KMs from you</h3>
+                                                            <h4>Tenure</h4>
+                                                            <span class="date">
+                                                                24th Mar' 17 - 24th Apr' 17 
+                                                                <div class="field-tip">
+                                                                    <span class="icon-tootlip"></span>
+                                                                    <div class="tip-content">
+                                                                        <h3>Schedule</h3>
+                                                                        <h4>Pickup <span>30th May'17<br>8AM - 10AM</span></h4>
+                                                                        <h4>Dropoff<span>31st May'17<br>11AM - 1PM</span></h4>
+                                                                    </div>
+                                                                </div>
+                                                            </span>
+                                                        </div>
+                                                        <div class="cart-item-plan col-md-2">
+                                                            <!-- <h3>Edit plan</h3> -->
+                                                            <h4>Deposit</h4>
+                                                            <span>Rs. 3000</span>
+                                                        </div>
+                                                        <div class="save-for-later col-md-2">
+                                                            <!-- <h3>save for later</h3> -->
+                                                            <h4>lease</h4>
+                                                            <span>
+                                                                Rs. 1500
+                                                                <div class="field-tip">
+                                                                    <span class="icon-tootlip"></span>
+                                                                    <div class="tip-content">
+                                                                        <h3>Breakdown</h3>
+                                                                        <h4>Rate per day <span><strike>400</strike></span></h4>
+                                                                        <h4>Discounted<br> Rate pre day<span>400</span></h4>
+                                                                        <h4>Booking Period<span>x 31 Days</span></h4>
+                                                                        <h4>Rate per day <span>400</span></h4>
+                                                                        <h2>Rate per day <span>400</span></h2>
+                                                                    </div>
+                                                                </div>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accept-reject-products">
+                                                        <a href="#" class="accept-products">Accept</a>
+                                                        <a href="#" class="reject-products">Reject</a>
+                                                    </div>
+                                                </div>
+                                                <div id="cart-card">
+                                                    <div class="row">
+                                                        <div class="img-container col-md-3">
+                                                            <img src="img/rent-an-avenger.jpg" alt="">
+                                                        </div>
+                                                        <div class="cart-item-details col-md-5">
+                                                            <h2>Bajaj Avenger 220 Cruiser <span>( x1 )</span></h2>
+                                                            <h3>Wanowrie, 5KMs from you</h3>
+                                                            <h4>Tenure</h4>
+                                                            <span class="date">
+                                                                24th Mar' 17 - 24th Apr' 17
+                                                                <div class="field-tip">
+                                                                    <span class="icon-tootlip"></span>
+                                                                    <div class="tip-content">
+                                                                        <h3>Schedule</h3>
+                                                                        <h4>Pickup <span>30th May'17<br>8AM - 10AM</span></h4>
+                                                                        <h4>Dropoff<span>31st May'17<br>11AM - 1PM</span></h4>
+                                                                    </div>
+                                                                </div>
+                                                            </span>
+                                                        </div>
+                                                        <div class="cart-item-plan col-md-2">
+                                                            <!-- <h3>Edit plan</h3> -->
+                                                            <h4>Deposit</h4>
+                                                            <span>Rs. 3000</span>
+                                                        </div>
+                                                        <div class="save-for-later col-md-2">
+                                                            <!-- <h3>save for later</h3> -->
+                                                            <h4>lease</h4>
+                                                            <span>
+                                                                Rs. 1500
+                                                                <div class="field-tip">
+                                                                    <span class="icon-tootlip"></span>
+                                                                    <div class="tip-content">
+                                                                        <h3>Breakdown</h3>
+                                                                        <h4>Rate per day <span><strike>400</strike></span></h4>
+                                                                        <h4>Discounted<br> Rate pre day<span>400</span></h4>
+                                                                        <h4>Booking Period<span>x 31 Days</span></h4>
+                                                                        <h4>Rate per day <span>400</span></h4>
+                                                                        <h2>Rate per day <span>400</span></h2>
+                                                                    </div>
+                                                                </div>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accept-reject-products">
+                                                        <a href="#" class="card-waiting-confirmation success">ACCEPTED</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h2 class="past-order-accordion">Booking ID # 789564BV<span>2nd Apr 2017</span></h2>
+                                    <div class="content">
+                                        <div class="shopping-card-item-order-caontainer">
+                                            <div class="shopping-card-item-price-caontainer">
+                                                <div id="cart-card">
+                                                    <div class="row">
+                                                        <div class="img-container col-md-3">
+                                                            <img src="img/rent-an-avenger.jpg" alt="">
+                                                        </div>
+                                                        <div class="cart-item-details col-md-5">
+                                                            <h2>Bajaj Avenger 220 Cruiser <span>( x1 )</span></h2>
+                                                            <h3>Wanowrie, 5KMs from you</h3>
+                                                            <h4>Tenure</h4>
+                                                            <span class="date">
+                                                            24th Mar' 17 - 24th Apr' 17 
+                                                            </span>
+                                                        </div>
+                                                        <div class="cart-item-plan col-md-2">
+                                                            <!-- <h3>Edit plan</h3> -->
+                                                            <h4>Deposit</h4>
+                                                            <span>Rs. 3000</span>
+                                                        </div>
+                                                        <div class="save-for-later col-md-2">
+                                                            <!-- <h3>save for later</h3> -->
+                                                            <h4>lease</h4>
+                                                            <span>
+                                                            Rs. 1500
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accept-reject-products">
+                                                        <a href="#" class="card-waiting-confirmation reject">Rejected</a>
+                                                    </div>
+                                                </div>
+                                                <div id="cart-card">
+                                                    <div class="row">
+                                                        <div class="img-container col-md-3">
+                                                            <img src="img/rent-an-avenger.jpg" alt="">
+                                                        </div>
+                                                        <div class="cart-item-details col-md-5">
+                                                            <h2>Bajaj Avenger 220 Cruiser <span>( x1 )</span></h2>
+                                                            <h3>Wanowrie, 5KMs from you</h3>
+                                                            <h4>Tenure</h4>
+                                                            <span class="date">
+                                                            24th Mar' 17 - 24th Apr' 17 
+                                                            </span>
+                                                        </div>
+                                                        <div class="cart-item-plan col-md-2">
+                                                            <!-- <h3>Edit plan</h3> -->
+                                                            <h4>Deposit</h4>
+                                                            <span>Rs. 3000</span>
+                                                        </div>
+                                                        <div class="save-for-later col-md-2">
+                                                            <!-- <h3>save for later</h3> -->
+                                                            <h4>lease</h4>
+                                                            <span>
+                                                            Rs. 1500
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accept-reject-products">
+                                                        <a href="#" class="accept-products">Accept</a>
+                                                        <a href="#" class="reject-products">Reject</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h2 class="past-order-accordion">Booking ID # 758412CD<span>10th May 2017</span></h2>
+                                    <div class="content">
+                                        <div class="shopping-card-item-order-caontainer">
+                                            <div class="shopping-card-item-price-caontainer">
+                                                <div id="cart-card">
+                                                    <div class="row">
+                                                        <div class="img-container col-md-3">
+                                                            <img src="img/rent-an-avenger.jpg" alt="">
+                                                        </div>
+                                                        <div class="cart-item-details col-md-5">
+                                                            <h2>Bajaj Avenger 220 Cruiser <span>( x1 )</span></h2>
+                                                            <h3>Wanowrie, 5KMs from you</h3>
+                                                            <h4>Tenure</h4>
+                                                            <span class="date">
+                                                            24th Mar' 17 - 24th Apr' 17 
+                                                            </span>
+                                                        </div>
+                                                        <div class="cart-item-plan col-md-2">
+                                                            <!-- <h3>Edit plan</h3> -->
+                                                            <h4>Deposit</h4>
+                                                            <span>Rs. 3000</span>
+                                                        </div>
+                                                        <div class="save-for-later col-md-2">
+                                                            <!-- <h3>save for later</h3> -->
+                                                            <h4>lease</h4>
+                                                            <span>
+                                                            Rs. 1500
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accept-reject-products">
+                                                        <a href="#" class="accept-products">Accept</a>
+                                                        <a href="#" class="reject-products">Reject</a>
+                                                    </div>
+                                                </div>
+                                                <div id="cart-card">
+                                                    <div class="row">
+                                                        <div class="img-container col-md-3">
+                                                            <img src="img/rent-an-avenger.jpg" alt="">
+                                                        </div>
+                                                        <div class="cart-item-details col-md-5">
+                                                            <h2>Bajaj Avenger 220 Cruiser <span>( x1 )</span></h2>
+                                                            <h3>Wanowrie, 5KMs from you</h3>
+                                                            <h4>Tenure</h4>
+                                                            <span class="date">
+                                                            24th Mar' 17 - 24th Apr' 17 
+                                                            </span>
+                                                        </div>
+                                                        <div class="cart-item-plan col-md-2">
+                                                            <!-- <h3>Edit plan</h3> -->
+                                                            <h4>Deposit</h4>
+                                                            <span>Rs. 3000</span>
+                                                        </div>
+                                                        <div class="save-for-later col-md-2">
+                                                            <!-- <h3>save for later</h3> -->
+                                                            <h4>lease</h4>
+                                                            <span>
+                                                            Rs. 1500
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accept-reject-products">
+                                                        <a href="#" class="accept-products">Accept</a>
+                                                        <a href="#" class="reject-products">Reject</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-summary" id="rent-hobby">
+                                    <h2>Rent a product<br>for your new hobby</h2>
+                                    <button>Back to products</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="js/owl.carousel.js" type="text/javascript"></script>
+                    <script>
+                        $(function() {
+                            $('#accordion .content').hide();
+                            $('#accordion h2:first').addClass('active').next().slideDown('slow');
+                            $('#accordion h2').click(function() {
+                                if ($(this).next().is(':hidden')) {
+                                    $('#accordion h2').removeClass('active').next().slideUp('slow');
+                                    $(this).toggleClass('active').next().slideDown('slow');
+                                }
+                            });
+                        });
+                    </script>
+                    <script>
+                        $(document).ready(function() {
+                            $(".owl-carousel").owlCarousel();
+                        });
+                    </script>
+                    <script>
+                        var owl = $('#featured-cards');
+                        owl.owlCarousel({
+                            margin: 10,
+                            loop: true,
+                            dots: false,
+                            nav: true,
+                            navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                            responsive: {
+                                0: {
+                                    items: 1
+                                },
+                                600: {
+                                    items: 2
+                                },
+                                1000: {
+                                    items: 2
+                                },
+                                1200: {
+                                    items: 3
+                                }
+                            }
+                        })
+                    </script>
+                    <script>
+                        $("#sign-me-up").click(function() {
+                            $("#modal1").modal('hide');
+                            $("#modal2").modal('show');
+                        });
+                        $("#login-me-now").click(function() {
+                            $("#modal2").modal('hide');
+                            $("#modal1").modal('show');
+                        });
+                    </script>
+                    <script>
+                        $(function() {
+                            $('#accordion .content').hide();
+                            $('#accordion h2:first').addClass('active').next().slideDown('slow');
+                            $('#accordion h2').click(function() {
+                                if ($(this).next().is(':hidden')) {
+                                    $('#accordion h2').removeClass('active').next().slideUp('slow');
+                                    $(this).toggleClass('active').next().slideDown('slow');
+                                }
+                            });
+                        });
+                    </script>
+                    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+                    <script>
+                        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+                    </script>
+                    <script src="js/vendor/bootstrap.min.js"></script>
+                    <script src="js/main.js"></script>
+            </html>
+            <!-- close-subscribe -->

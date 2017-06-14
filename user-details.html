@@ -1,0 +1,407 @@
+<!doctype html>
+<!--[if lt IE 7]>      
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="">
+    <![endif]-->
+<!--[if IE 7]>         
+    <html class="no-js lt-ie9 lt-ie8" lang="">
+        <![endif]-->
+<!--[if IE 8]>         
+        <html class="no-js lt-ie9" lang="">
+            <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Rent Sent Go</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <!-- main -->
+    <link rel="stylesheet/less" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet/less" href="css/owl.carousel.min.css">
+    <link rel="stylesheet/less" href="css/responsive.less">
+    <link rel="stylesheet/less" href="css/subscribe-modal.less">
+    <link rel="stylesheet/less" href="css/login.less">
+    <link rel="stylesheet/less" href="css/header.less">
+    <link rel="stylesheet/less" href="css/cart-list.less">
+    <link rel="stylesheet/less" href="css/user-details.less">
+    <link rel="stylesheet/less" href="css/lender-products.less">
+    <link rel="stylesheet/less" href="css/sign-up.less">
+    <link rel="stylesheet" href="glyphs-fonts.css">
+    <link rel="stylesheet/less" href="css/main.less">
+    <link rel="stylesheet/less" href="css/font-awesome.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="js/less.js" type="text/javascript"></script>
+    <!--  jQuery 1.7+  -->
+    <script src="js/jquery-1.9.1.js"></script>
+</head>
+
+<body>
+    <div id="modal1" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="login" id="login">
+                        <div class="row">
+                            <div class="login-left">
+                                <h2>Not Registered Yet ?</h2>
+                                <a target="#" id="sign-me-up">sign me up !</a>
+                                <div class="login-social">
+                                    <a href="#" class="login-facebook"><i class="fa fa-facebook" aria-hidden="true"></i> login with facebook</a>
+                                    <a target="#" class="login-google"><i class="fa fa-google-plus" aria-hidden="true"></i> login with google</a>
+                                </div>
+                            </div>
+                            <div class="login-form">
+                                <h3>Sign in</h3>
+                                <form action="login_submit" method="get" accept-charset="utf-8">
+                                    <span>Email</span>
+                                    <input type="text" placeholder="Your Email">
+                                    <span>Password</span>
+                                    <input type="password" placeholder="Enter your password here">
+                                    <div class="remember-me">
+                                        <label for="remember-me">
+                                            <input type="checkbox" name="remember-me" value="remember-me" id="remember-me">
+                                            <span>Remember Me</span>
+                                        </label>
+                                        <span><a href="#">forgot passowrd?</a></span>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <button type="submit">log in now !</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-login-bottom-text">
+                        <h2>Get coupons for discount & offers</h2>
+                        <h4>by joining our rentsetgo family</h4>
+                    </div>
+                    <!-- <button id="close1_open2" type="button" class="btn btn-primary">close & open modal 2</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <button class="btn btn-primary" data-toggle="modal" data-target="#modal2">modal 2</button> -->
+    <div id="modal2" class="modal fade sign-up-no-modal-padding" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="sign-up-box" id="sign-up-box">
+                        <div class="row">
+                            <div class="login-left">
+                                <h2>Have an account<br>already ?</h2>
+                                <a target="#" id="login-me-now">Login</a>
+                                <div class="login-social">
+                                    <a href="#" class="login-facebook"><i class="fa fa-facebook" aria-hidden="true"></i> login with facebook</a>
+                                    <a href="#" class="login-google"><i class="fa fa-google-plus" aria-hidden="true"></i> login with google</a>
+                                </div>
+                            </div>
+                            <div class="login-form">
+                                <h3>Sign Up</h3>
+                                <form action="login_submit" method="get" accept-charset="utf-8">
+                                    <span>Fill Name</span>
+                                    <input type="text" placeholder="Full Name">
+                                    <span>Email</span>
+                                    <input type="text" placeholder="Email">
+                                    <span>Phone</span>
+                                    <input type="tel" placeholder="Please Enter Your mobile number">
+                                    <span>Password</span>
+                                    <input type="password" placeholder="Minimun 6 Alphanumeric Characters">
+                                    <div class="clear"></div>
+                                    <button type="submit">Sign Up now !</button>
+                                    <p>By clicking on "Singn Me Up", I agree to RentSetGo's Terms & Conditions</p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <button id="close2_open1" type="button" class="btn btn-primary">close & open modal 2</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="reason-for-rejection" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="login" id="login">
+                        <div class="row">
+                            <div class="login-left">
+                                <h2>We Understand</h2>
+                                <span>Sometimes there are too many<br>customers for your loved product.</span>
+                                <h3>Please provide a kind <br>& valid reason for<br>your rejection</h3>
+                                <p>Contact Our Customer Support at</p>
+                                <p>1800 - 203 - 456
+                                    <span><u>support@rentsetgo.com</u></span></p>
+                            </div>
+                            <div class="login-form">
+                                <h3>Reason For Rejection</h3>
+                                <form action="login_submit" method="get" accept-charset="utf-8">
+                                    <form action="/action_page.php">
+                                        <div class="paper-bg">
+                                            <input type="radio" name="rejection-reason" id="out-of-stock" value="out-of-stock">
+                                            <label for="out-of-stock">Product Out Of Stock</label>
+                                            <div class="check"></div>
+                                        </div>
+                                        <div class="paper-bg">
+                                            <input type="radio" name="rejection-reason" id="distance-issue" value="distance-issue">
+                                            <label for="distance-issue">Distance is an issue</label>
+                                            <div class="check"></div>
+                                        </div>
+                                        <div class="paper-bg">
+                                            <input type="radio" name="rejection-reason" id="delivery-cant-commit" value="delivery-cant-commit">
+                                            <label for="delivery-cant-commit">Can not commit delivery</label>
+                                            <div class="check"></div>
+                                        </div>
+                                        <div class="paper-bg">
+                                            <input type="radio" name="rejection-reason" id="my-reason" value="my-reason">
+                                            <label for="my-reason">I'll state my reason</label>
+                                            <div class="check"></div>
+                                        </div>
+                                        <div id='my-reason-for-rejection' style='display:none'>
+                                            <h2>Reason For Rejection</h2>
+                                            <textarea></textarea>
+                                            <a data-target="#" class="hide-div">BACK</a>
+                                            <a class="apply-coupon" data-target="#">Send Message</a>
+                                        </div>
+                                        <a class="apply-coupon" data-target="#">Send Message</a>
+                                    </form>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <button id="close1_open2" type="button" class="btn btn-primary">close & open modal 2</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="header-inner-section">
+            <div class="row">
+                <div class="col-lg-2 col-md-3 col-sm-12 com-border-right">
+                    <a class="navbar-brand logo" href="index.html"><img src="img/logo_nav.png" alt=""></a>
+                </div>
+                <div class="col-lg-10 col-md-2 col-sm-12 topadd-to-cart">
+                    <div class="addtovart-login pull-right">
+                        <div class="addtovart-login-cooman">
+                            <div class="add-to-cart">
+                                <span class="icon-cart"></span>
+                                <sub>10</sub>
+                            </div>
+                        </div>
+                        <div class="addtovart-login-cooman">
+                            <div class="login-logout">
+                                <div class="dropdown" id="menuLogin">
+                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">
+                                        <div class="user-prof-img">
+                                            <img src="img/user-image.png">
+                                        </div>
+                                        <sub> <i class="fa fa-chevron-down" aria-hidden="true"></i> </sub>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <form class="form" id="formLogin">
+                                            <p>Hi, User</p>
+                                            <a href="#">lease products</a>
+                                            <a href="#">past orders</a>
+                                            <a href="#">Edit profile</a>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="user-details">
+            <h3>User Details</h3>
+            <hr>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-5">
+                        <form>
+                            <label>Full Name</label>
+                            <input type="text" name="" value="" placeholder="">
+                            <label>Email ID</label>
+                            <input type="email" name="" value="" placeholder="">
+                            <label>Phone</label>
+                            <input type="tel" name="" value="" placeholder="">
+                            <label>City</label>
+                            <select>
+                                <option value="Pune">Pune</option>
+                                <option value="Banglore">Banglore</option>
+                                <option value="Goa">Goa</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="col-md-offset-1 col-md-4">
+                        <div class="col-md-12">
+                            <div class="upload-photo">
+                                <!-- <i class="fa fa-user-o" aria-hidden="true"></i> -->
+                                <div class="img-container">
+                                    <img id="product-display-image-gallery2" src="img/prod-img.jpg" alt="your image" class="img-responsive" />
+                                </div>
+                                <!-- <img id="blah" src="#" alt="your image" onerror="this.src='fallback-img.jpg'"/> -->
+                                <div class="title">
+                                    <label for="product-display-image-gallery2-files" class="btn">Choose image</label>
+                                    <input id="product-display-image-gallery2-files" style="visibility:hidden;" type="file">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="verification-id">
+                                <p>Verification ID</p>
+                                <!-- <i class="fa fa-user-o" aria-hidden="true"></i> -->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="img-container">
+                                            <img id="product-display-image-gallery3" src="img/prod-img.jpg" alt="your image" class="img-responsive" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="title text-left">
+                                            <label for="product-display-image-gallery3-files" class="btn">Choose image</label>
+                                            <input id="product-display-image-gallery3-files" style="visibility:hidden;" type="file">
+                                            <span>Upload a file like driving licence to help lenders vrify the transcition during delivery</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="update-back-to-product text-center">
+            <div class="row">
+                <div class="col-md-6"><a href="#" class="pull-right">change password</a></div>
+                <div class="col-md-6"><a href="#" class="update-listing-btn pull-left">update profile</a></div>
+            </div>
+            <span>By clicking on "Update Profile", you agree to our<br><u>Terms &amp; Policies</u></span>
+        </div>
+        <!-- my address -->
+        <div class="my-address">
+            <div class="container-fluid">
+                <h3>my address</h3>
+                <hr>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Society name & house number</label>
+                            <input type="text" name="Society" placeholder="Society Name">
+                            <label>locality</label>
+                            <input type="text" name="locality" placeholder="Locality">
+                        </div>
+                        <div class="col-md-3">
+                            <label>Street & area</label>
+                            <input type="text" name="Street" placeholder="Street">
+                            <label>city</label>
+                            <input type="text" name="city" placeholder="City">
+                        </div>
+                        <div class="col-md-3">
+                            <label>Landmark</label>
+                            <input type="text" name="Landmark" placeholder="Landmark">
+                            <label>pincode</label>
+                            <input type="text" name="pincode" placeholder="Pincode">
+                        </div>
+                    </div>
+                    <a href="#">save address</a>
+                </form>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <!-- my coupons -->
+        <div class="my-coupons">
+            <div class="container">
+                <h3>my coupons</h3>
+                <hr>
+                <div class="my-coupons-container">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="coupon-container text-center">
+                                <h4>RSG500</h4>
+                                <p>Get upto Rs500 Off</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="coupon-container text-center">
+                                <h4>RSG500</h4>
+                                <p>Get upto Rs500 Off</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="coupon-container text-center">
+                                <h4>RSG500</h4>
+                                <p>Get upto Rs500 Off</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="coupon-container text-center">
+                                <h4>RSG500</h4>
+                                <p>Get upto Rs500 Off</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="looking-for-coupons text-center">
+                                <h4>looking for coupons ?</h4>
+                                <p>Get discount codes by heliping us
+                                    <br>spread the world</p>
+                                <a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i>Refer us on facebook</a>
+                                <a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i>add us on google</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+    function readURLgallery2(input) {
+        if (input.files) {
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+                $('#product-display-image-gallery2').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#product-display-image-gallery2-files").change(function() {
+        readURLgallery2(this);
+    });
+
+    function readURLgallery3(input) {
+        if (input.files) {
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+                $('#product-display-image-gallery3').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#product-display-image-gallery3-files").change(function() {
+        readURLgallery3(this);
+    });
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</html>
+<!-- close-subscribe -->

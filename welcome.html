@@ -1,0 +1,808 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Rent Sent Go</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <!-- main -->
+    <link rel="stylesheet/less" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet/less" href="css/owl.carousel.min.css">
+    <link rel="stylesheet/less" href="css/responsive.less">
+    <link rel="stylesheet/less" href="css/subscribe-modal.less">
+    <link rel="stylesheet/less" href="css/login.less">
+    <link rel="stylesheet/less" href="css/sign-up.less">
+    <link rel="stylesheet/less" href="css/main.less">
+    <link rel="stylesheet/less" href="css/font-awesome.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="js/less.js" type="text/javascript"></script>
+    <!--  jQuery 1.7+  -->
+    <script src="js/jquery-1.9.1.js"></script>
+</head>
+
+<body>
+    <!-- <button class="btn btn-primary" data-toggle="modal" data-target="#modal1">modal 1</button> -->
+    <div id="modal1" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="login" id="login">
+                        <div class="row">
+                            <div class="login-left">
+                                <h2>Not Registered Yet ?</h2>
+                                <a target="#" id="sign-me-up">sign me up !</a>
+                                <div class="login-social">
+                                    <a href="#" class="login-facebook"><i class="fa fa-facebook" aria-hidden="true"></i> login with facebook</a>
+                                    <a target="#" class="login-google"><i class="fa fa-google-plus" aria-hidden="true"></i> login with google</a>
+                                </div>
+                            </div>
+                            <div class="login-form">
+                                <h3>Sign in</h3>
+                                <form action="login_submit" method="get" accept-charset="utf-8">
+                                    <span>Email</span>
+                                    <input type="text" placeholder="Your Email">
+                                    <span>Password</span>
+                                    <input type="password" placeholder="Enter your password here">
+                                    <div class="remember-me">
+                                        <label for="remember-me">
+                                            <input type="checkbox" name="remember-me" value="remember-me" id="remember-me">
+                                            <span>Remember Me</span>
+                                        </label>
+                                        <span><a href="#">forgot passowrd?</a></span>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <button type="submit">log in now !</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <button id="close1_open2" type="button" class="btn btn-primary">close & open modal 2</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <button class="btn btn-primary" data-toggle="modal" data-target="#modal2">modal 2</button> -->
+    <div id="modal2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="sign-up-box" id="sign-up-box">
+                        <div class="row">
+                            <div class="login-left">
+                                <h2>Have an account<br>already ?</h2>
+                                <a target="#" id="login-me-now">Login</a>
+                                <div class="login-social">
+                                    <a href="#" class="login-facebook"><i class="fa fa-facebook" aria-hidden="true"></i> login with facebook</a>
+                                    <a href="#" class="login-google"><i class="fa fa-google-plus" aria-hidden="true"></i> login with google</a>
+                                </div>
+                            </div>
+                            <div class="login-form">
+                                <h3>Sign Up</h3>
+                                <form action="login_submit" method="get" accept-charset="utf-8">
+                                    <span>Fill Name</span>
+                                    <input type="text" placeholder="Full Name">
+                                    <span>Email</span>
+                                    <input type="text" placeholder="Email">
+                                    <span>Phone</span>
+                                    <input type="tel" placeholder="Please Enter Your mobile number">
+                                    <span>Password</span>
+                                    <input type="password" placeholder="Minimun 6 Alphanumeric Characters">
+                                    <div class="clear"></div>
+                                    <button type="submit">Sign Up now !</button>
+                                    <p>By clicking on "Singn Me Up", I agree to RentSetGo's Terms & Conditions</p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <button id="close2_open1" type="button" class="btn btn-primary">close & open modal 2</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- go to top -->
+    <div id="go-to-top"></div>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="img/logo_nav.png" alt=""></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <form class="navbar-form navbar-right" role="form">
+                    <a class="btn btn-success" href="#how-it-works">How It Works</a>
+                    <a class="btn btn-success" data-toggle="modal" data-target="#modal1">Sign in</a>
+                </form>
+            </div>
+            <!--/.navbar-collapse -->
+        </div>
+    </nav>
+    <!-- banner -->
+    <div class="banner">
+        <div class="clear"></div>
+        <div class="wish-to-rent">
+            <form action="index_submit" method="get" accept-charset="utf-8">
+                <div class="search-by-city">
+                    <div class="city-dropdown">
+                        <a href="#">LOCATE ME<img src="img/PixelKit_point_marker_icon.png" alt="" width="12"></a>
+                        <!-- <select name="city">
+                            <option value="Pune">Pune</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Banglore">Banglore</option>
+                            <option value="Goa">Goa</option>
+                        </select> -->
+                    </div>
+                    <!-- <div class="clear"></div> -->
+                    <div class="input-and-text">
+                        <input type="text" name="" placeholder="Kapil Zenith, bavdhan, Pune">
+                        <!-- <button type="submit">Rent Now !</button> -->
+                    </div>
+                </div>
+                <h1><span>Trending Products</span> In Pune</h1>
+            </form>
+        </div>
+    </div>
+    <!-- category-nav -->
+    <div class="category-nav">
+        <ul>
+            <li>
+                <a href="#"><img src="img/ic-motorcycle.png" alt="">
+                    <p>motorcycles</p>
+                </a>
+            </li>
+            <li>
+                <a href="#"><img src="img/ic-bicycles.png" alt="">
+                    <p>bicycles</p>
+                </a>
+            </li>
+            <li>
+                <a href="#"><img src="img/ic-camera.png" alt="">
+                    <p>cameras</p>
+                </a>
+            </li>
+            <li>
+                <a href="#"><img src="img/ic-music.png" alt="">
+                    <p>music</p>
+                </a>
+            </li>
+            <li>
+                <a href="#"><img src="img/ic-electronics.png" alt="">
+                    <p>electronics</p>
+                </a>
+            </li>
+            <li>
+                <a href="#"><img src="img/ic-campng.png" alt="">
+                    <p>camping</p>
+                </a>
+            </li>
+            <li>
+                <a href="#"><img src="img/ic-games.png" alt="">
+                    <p>games</p>
+                </a>
+            </li>
+            <li>
+                <img src="img/ic-experiences.png" alt="">
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <p>More
+                            <p>
+                    </button>
+                    <div class="dropdown-content text-left">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+    <!-- featured cards -->
+    <div class="featured-cards">
+        <div class="featured-cards-holder">
+            <div class="container-fluid">
+                <h3>Popular Products</h3>
+                <div class="card-container">
+                    <div id="featured-cards" class="owl-carousel owl-theme">
+                        <div class="product-card item">
+                            <div class="img-container">
+                                <img src="img/prod-img.jpg" alt="triumph">
+                            </div>
+                            <div class="product-descp">
+                                <h5>triumph bonneville</h5>
+                                <div class="likes">
+                                    <span class="numbers">30</span><img src="img/likes.ico" alt="">
+                                </div>
+                                <p>Rs <span>3500</span> per Day</p>
+                                <button>see 5 products</button>
+                            </div>
+                        </div>
+                        <div class="product-card item">
+                            <div class="img-container">
+                                <img src="img/prod-img.jpg" alt="triumph">
+                            </div>
+                            <div class="product-descp">
+                                <h5>triumph bonneville</h5>
+                                <div class="likes">
+                                    <span class="numbers">30</span><img src="img/likes.ico" alt="">
+                                </div>
+                                <p>Rs <span>3500</span> per Day</p>
+                                <button>see 5 products</button>
+                            </div>
+                        </div>
+                        <div class="product-card item">
+                            <div class="img-container">
+                                <img src="img/prod-img.jpg" alt="triumph">
+                            </div>
+                            <div class="product-descp">
+                                <h5>triumph bonneville</h5>
+                                <div class="likes">
+                                    <span class="numbers">30</span><img src="img/likes.ico" alt="">
+                                </div>
+                                <p>Rs <span>3500</span> per Day</p>
+                                <button>see 5 products</button>
+                            </div>
+                        </div>
+                        <div class="product-card item">
+                            <div class="img-container">
+                                <img src="img/prod-img.jpg" alt="triumph">
+                            </div>
+                            <div class="product-descp">
+                                <h5>triumph bonneville</h5>
+                                <div class="likes">
+                                    <span class="numbers">30</span><img src="img/likes.ico" alt="">
+                                </div>
+                                <p>Rs <span>3500</span> per Day</p>
+                                <button>see 5 products</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <!-- Experinces -->
+    <div class="experinces">
+        <div class="experinces-card-holder">
+            <div class="container-fluid">
+                <div class="dropdown">
+                    <h3>experiences<span>New</span></h3>
+                </div>
+                <div id="experiences" class="owl-carousel owl-theme">
+                    <div class="experince-card item">
+                        <div class="img-container">
+                            <img src="img/prod-img.jpg" alt="triumph">
+                        </div>
+                        <div class="experince-descp">
+                            <h5>White Knights</h5>
+                            <p>Katraj</p>
+                        </div>
+                    </div>
+                    <div class="experince-card item">
+                        <div class="img-container">
+                            <img src="img/prod-img.jpg" alt="triumph">
+                        </div>
+                        <div class="experince-descp">
+                            <h5>White Knights</h5>
+                            <p>Katraj</p>
+                        </div>
+                    </div>
+                    <div class="experince-card item">
+                        <div class="img-container">
+                            <img src="img/prod-img.jpg" alt="triumph">
+                        </div>
+                        <div class="experince-descp">
+                            <h5>White Knights</h5>
+                            <p>Katraj</p>
+                        </div>
+                    </div>
+                    <div class="experince-card item">
+                        <div class="img-container">
+                            <img src="img/prod-img.jpg" alt="triumph">
+                        </div>
+                        <div class="experince-descp">
+                            <h5>White Knights</h5>
+                            <p>Katraj</p>
+                        </div>
+                    </div>
+                    <div class="experince-card item">
+                        <div class="img-container">
+                            <img src="img/prod-img.jpg" alt="triumph">
+                        </div>
+                        <div class="experince-descp">
+                            <h5>White Knights</h5>
+                            <p>Katraj</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <!-- category 1 -->
+    <div class="category-slider">
+        <div class="container-fluid">
+            <div class="carogory-product-card-holder">
+                <h3>Motorcycles</h3>
+                <div id="carogory-product-card-slider-1" class="owl-carousel owl-theme">
+                    <div class="category-product item">
+                        <img src="img/prod-img.jpg" alt="">
+                        <div class="category-prod-desc">
+                            <p>Avenger 220 Cruise</p>
+                            <p>Starting at Rs <span class="numbers">1500</span> per Day</p>
+                            <div class="text-center">
+                                <button>see 5 products</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-product item">
+                        <img src="img/prod-img.jpg" alt="">
+                        <div class="category-prod-desc">
+                            <p>Avenger 220 Cruise</p>
+                            <p>Starting at Rs <span class="numbers">1500</span> per Day</p>
+                            <div class="text-center">
+                                <button>see 5 products</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-product item">
+                        <img src="img/prod-img.jpg" alt="">
+                        <div class="category-prod-desc">
+                            <p>Avenger 220 Cruise</p>
+                            <p>Starting at Rs <span class="numbers">1500</span> per Day</p>
+                            <div class="text-center">
+                                <button>see 5 products</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-product item">
+                        <img src="img/prod-img.jpg" alt="">
+                        <div class="category-prod-desc">
+                            <p>Avenger 220 Cruise</p>
+                            <p>Starting at Rs <span class="numbers">1500</span> per Day</p>
+                            <div class="text-center">
+                                <button>see 5 products</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- category 2 -->
+    <div class="category-slider category-slider-1">
+        <div class="container-fluid">
+            <div class="carogory-product-card-holder">
+                <h3>Electronics</h3>
+                <div id="carogory-product-card-slider-2" class="owl-carousel owl-theme">
+                    <div class="category-product item">
+                        <img src="img/prod-img.jpg" alt="">
+                        <div class="category-prod-desc">
+                            <p>Avenger 220 Cruise</p>
+                            <p>Starting at Rs <span class="numbers">1500</span> per Day</p>
+                            <div class="text-center">
+                                <button>see 5 products</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-product item">
+                        <img src="img/prod-img.jpg" alt="">
+                        <div class="category-prod-desc">
+                            <p>Avenger 220 Cruise</p>
+                            <p>Starting at Rs <span class="numbers">1500</span> per Day</p>
+                            <div class="text-center">
+                                <button>see 5 products</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-product item">
+                        <img src="img/prod-img.jpg" alt="">
+                        <div class="category-prod-desc">
+                            <p>Avenger 220 Cruise</p>
+                            <p>Starting at Rs <span class="numbers">1500</span> per Day</p>
+                            <div class="text-center">
+                                <button>see 5 products</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-product item">
+                        <img src="img/prod-img.jpg" alt="">
+                        <div class="category-prod-desc">
+                            <p>Avenger 220 Cruise</p>
+                            <p>Starting at Rs <span class="numbers">1500</span> per Day</p>
+                            <div class="text-center">
+                                <button>see 5 products</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- download app -->
+    <div class="clear"></div>
+    <div class="download-app-play">
+        <div class="container-fluid">
+            <div class="play-app-content-holder">
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-3">
+                        <img src="img/img-smartphone.png" alt="" class="mobile-image">
+                    </div>
+                    <div class="col-md-2">
+                        <p>available on</p>
+                        <img src="img/Google_Play_logo.svg.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+
+    <div class="how-it-works" id="how-it-works">
+        <div class="col-lg-12 text-center">
+            <h1>How It Works</h1>
+        </div>
+        <div class="text-center">
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/1ls5-nlwdTA?ecver=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <!-- verdict and reviews -->
+    <div class="testimonials-cards">
+        <div class="testimonials-cards-holder">
+            <div class="container-fluid">
+                <h3>Verdict & Reviews</h3>
+                <div class="card-container">
+                    <div id="testimonials-cards" class="owl-carousel owl-theme">
+                        <div class="reviews-card item">
+                            <div class="img-container">
+                                <div class="testimonial-about-product">
+                                    <div class="testimonial-about-product-descp">
+                                        <p>Corvette Concept</p>
+                                        <p>Rs <span>8000</span> per Day</p>
+                                    </div>
+                                    <div class="likes">
+                                        <span class="numbers">30</span><img src="img/likes.ico" alt="">
+                                    </div>
+                                    <p class="testimonial-text">Perfect saviour solution when I had no cycle for cyclothon. It was an awesome and smooth cycling experience with RentSetGo...</p>
+                                    <a href="#">Read More</a>
+                                </div>
+                                <img src="img/prod-img.jpg" alt="triumph">
+                            </div>
+                            <a href="#" class="view-details">view details</a>
+                            <div class="reviews-descp">
+                                <div class="testimonial-user-image"><img src="img/icon-user-default.png"></div>
+                                <h5>Deb Banerjee</h5>
+                                <h5>Pune</h5>
+                            </div>
+                        </div>
+                        <div class="reviews-card item">
+                            <div class="img-container">
+                                <div class="testimonial-about-product">
+                                    <div class="testimonial-about-product-descp">
+                                        <p>Corvette Concept</p>
+                                        <p>Rs <span>8000</span> per Day</p>
+                                    </div>
+                                    <div class="likes">
+                                        <span class="numbers">30</span><img src="img/likes.ico" alt="">
+                                    </div>
+                                    <p class="testimonial-text">Perfect saviour solution when I had no cycle for cyclothon. It was an awesome and smooth cycling experience with RentSetGo...</p>
+                                    <a href="#">Read More</a>
+                                </div>
+                                <img src="img/prod-img.jpg" alt="triumph">
+                            </div>
+                            <a href="#" class="view-details">view details</a>
+                            <div class="reviews-descp">
+                                <div class="testimonial-user-image"><img src="img/icon-user-default.png"></div>
+                                <h5>Mangesh Jadhav</h5>
+                                <h5>Pune</h5>
+                            </div>
+                        </div>
+                        <div class="reviews-card item">
+                            <div class="img-container">
+                                <div class="testimonial-about-product">
+                                    <div class="testimonial-about-product-descp">
+                                        <p>Corvette Concept</p>
+                                        <p>Rs <span>8000</span> per Day</p>
+                                    </div>
+                                    <div class="likes">
+                                        <span class="numbers">30</span><img src="img/likes.ico" alt="">
+                                    </div>
+                                    <p class="testimonial-text">Perfect saviour solution when I had no cycle for cyclothon. It was an awesome and smooth cycling experience with RentSetGo...</p>
+                                    <a href="#">Read More</a>
+                                </div>
+                                <img src="img/prod-img.jpg" alt="triumph">
+                            </div>
+                            <a href="#" class="view-details">view details</a>
+                            <div class="reviews-descp">
+                                <div class="testimonial-user-image"><img src="img/icon-user-default.png"></div>
+                                <h5>triumph bonneville</h5>
+                                <h5>Pune</h5>
+                            </div>
+                        </div>
+                        <div class="reviews-card item">
+                            <div class="img-container">
+                                <div class="testimonial-about-product">
+                                    <div class="testimonial-about-product-descp">
+                                        <p>Corvette Concept</p>
+                                        <p>Rs <span>8000</span> per Day</p>
+                                    </div>
+                                    <div class="likes">
+                                        <span class="numbers">30</span><img src="img/likes.ico" alt="">
+                                    </div>
+                                    <p class="testimonial-text">Perfect saviour solution when I had no cycle for cyclothon. It was an awesome and smooth cycling experience with RentSetGo...</p>
+                                    <a href="#">Read More</a>
+                                </div>
+                                <img src="img/prod-img.jpg" alt="triumph">
+                            </div>
+                            <a href="#" class="view-details">view details</a>
+                            <div class="reviews-descp">
+                                <div class="testimonial-user-image"><img src="img/icon-user-default.png"></div>
+                                <h5>triumph bonneville</h5>
+                                <h5>Pune</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- subscribe-modal -->
+    <div class="bottom-subscribe-form">
+        <div class="container-fluid">
+            <div class="subscribe-form">
+                <div class="location-container">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    <select name="city">
+                        <option value="Pune">Pune</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Banglore">Banglore</option>
+                        <option value="Goa">Goa</option>
+                    </select>
+                </div>
+                <input type="email" name="" placeholder="Enter Email & subscribe to the latest deals">
+                <button id="subscribe-to-deals">subscribe to deals</button>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid">
+            <div class="sitemap row">
+                <div class="col-lg-4 col-md-4 logo">
+                    <a href="#"><img src="img/logo-footer.png" alt=""></a>
+                    <p>© 2016-17 RentSetGo Pvt. Ltd.
+                        <br>All Rights Reserved</p>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                    <h4>Get to know us</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Media</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Partners</a>
+                    <a href="#">Download App</a>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                    <h4>connect with us</h4>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Youtube</a>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                    <h4>let us help you</h4>
+                    <a href="#">Refer 7 Earn</a>
+                    <a href="#">FAQ</a>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                    <h4>got queries</h4>
+                    <a href="#">Call Us: +91 7738257343</a>
+                    <a href="#">Mail: orders@rentsetgo.co</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="subscribe-modal">
+        <div class="container-fluid text-center">
+            <div class="ribbon-container">
+                <div class="subscribe-form">
+                    <form>
+                        <h2>sign up<br>to unlock deals</h2>
+                        <span>Name</span>
+                        <input type="text" placeholder="Your Name">
+                        <span>Email</span>
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit">subscribe now</button>
+                        <p id="close-subscribe"><a href="javascript:void(0)">No Thanks, I wanna continue browsing</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="back-to-top text-center">
+        <a href="#go-to-top" rel="relativeanchor"><i class="fa fa-angle-double-up" aria-hidden="true"></i>back to top</a>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/owl.carousel.js" type="text/javascript"></script>
+    <script>
+    $(document).ready(function() {
+        $(".owl-carousel").owlCarousel();
+    });
+    </script>
+    <script>
+    var owl = $('#featured-cards');
+    owl.owlCarousel({
+        margin: 10,
+        loop: true,
+        dots: false,
+        nav: true,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 2
+            },
+            1200: {
+                items: 3
+            }
+        }
+    })
+    </script>
+    <script>
+    var owl = $('#experiences');
+    owl.owlCarousel({
+        margin: 10,
+        loop: true,
+        dots: false,
+        nav: true,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            },
+            1200: {
+                items: 4
+            }
+        }
+    })
+    </script>
+    <script>
+    var owl = $('#carogory-product-card-slider-1');
+    owl.owlCarousel({
+        margin: 10,
+        loop: true,
+        dots: false,
+        nav: true,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 2
+            },
+            1200: {
+                items: 3
+            }
+        }
+    })
+    </script>
+    <script>
+    var owl = $('#carogory-product-card-slider-2');
+    owl.owlCarousel({
+        margin: 10,
+        loop: true,
+        dots: false,
+        nav: true,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 2
+            },
+            1200: {
+                items: 3
+            }
+        }
+    })
+    </script>
+    <script>
+    var owl = $('#testimonials-cards');
+    owl.owlCarousel({
+        margin: 10,
+        loop: true,
+        dots: false,
+        nav: true,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 2
+            }
+        }
+    })
+    </script>
+    <script>
+    $(document).ready(function() {
+        $('a[rel="relativeanchor"]').click(function() {
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 700);
+            return false;
+        });
+    });
+    $("#sign-me-up").click(function() {
+        $("#modal1").modal('hide');
+        $("#modal2").modal('show');
+    });
+    $("#login-me-now").click(function() {
+        $("#modal2").modal('hide');
+        $("#modal1").modal('show');
+    });
+    $(window).scroll(function() {
+        if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+            $('.subscribe-modal').addClass('show')
+        } else {
+            $('.subscribe-modal').removeClass('show')
+        }
+    });
+    $("#close-subscribe").click(function() {
+        $(".subscribe-modal").removeClass('show');
+    });
+    $("#subscribe-to-deals").click(function() {
+        $(".subscribe-modal").addClass('show');
+    });
+    </script>
+</body>
+
+</html>
+<!-- close-subscribe -->
